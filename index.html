@@ -39,9 +39,9 @@
         <h1>Email - list</h1>
 
         <div class="list-container">
-          <button @clik="GenerateMailRandom()">Generate Mails</button>
+          <button @click="GenerateMailRandom()">Generate Mails</button>
 
-          <ul>
+          <ul v-if="arrayRandomMail.length==10">
             <li v-for="mail in arrayRandomMail ">{{mail}}</li>
           </ul>
         </div>

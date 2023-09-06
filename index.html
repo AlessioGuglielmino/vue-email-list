@@ -39,11 +39,11 @@
         <h1>Email - list</h1>
 
         <div class="list-container">
-          <button>Generate Mails</button>
+          <button @clik="GenerateMailRandom()">Generate Mails</button>
 
-          <div>
+          <ul>
             <li v-for="mail in arrayRandomMail ">{{mail}}</li>
-          </div>
+          </ul>
         </div>
       </div>
     </body>

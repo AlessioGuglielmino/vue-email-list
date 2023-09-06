@@ -37,10 +37,13 @@
     <body>
       <div id="app">
         <h1>Email - list</h1>
+
         <div class="list-container">
-          <ul>
-            <li></li>
-          </ul>
+          <button>Generate Mails</button>
+
+          <div>
+            <li v-for="mail in arrayRandomMail ">{{mail}}</li>
+          </div>
         </div>
       </div>
     </body>
